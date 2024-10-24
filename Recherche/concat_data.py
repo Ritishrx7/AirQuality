@@ -39,9 +39,6 @@ def get_all_month(year, month):
             print(f"Diff col : {daily_df.columns}")
         df = pd.concat([df, daily_df]).reset_index(drop=True)
 
-        memory_in_mb = df.memory_usage(deep=True).sum() / (1024**2)
-        print(f"DataFrame size: {memory_in_mb:.2f} MB")
-
     return df
 
 
@@ -60,14 +57,19 @@ def get_all_year(year):
     return df
 
 
-st = time.perf_counter()
+if __name__ == "__main__":
+    # st = time.perf_counter()
 
-df_2021 = get_all_year("2021")
+    # df_2021 = get_all_year("2021")
 
-end = time.perf_counter()
+    # end = time.perf_counter()
 
-print(df_2021.shape)
-print(df_2021.head())
-print(f"Tot time take: {end-st:.3f}s")
-memory_in_mb = df_2021.memory_usage(deep=True).sum() / (1024**2)
-print(f"Final DataFrame size: {memory_in_mb:.2f} MB")
+    # print(df_2021.shape)
+    # print(df_2021.head())
+    # print(f"Tot time take: {end-st:.3f}s")
+    # memory_in_mb = df_2021.memory_usage(deep=True).sum() / (1024**2)
+    # print(f"Final DataFrame size: {memory_in_mb:.2f} MB")
+
+    for y in years:
+        df = get_all_year(y)
+        df.to_csv(f"AirQuality_{y}.csv")

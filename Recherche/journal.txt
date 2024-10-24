@@ -1,0 +1,10 @@
+24/10
+create function get_all_month & year to recursively get data
+
+2021 data took about 277s to get
+Total memory up to 3/4Go ?
+Faut compter à peu près 1.8go / mois
+
+
+Tot time take: 679.802s
+Final DataFrame size: 22270.81 MB
