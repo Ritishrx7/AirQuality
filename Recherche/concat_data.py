@@ -30,8 +30,10 @@ def get_all_month(year, month):
             daily_df = pd.read_csv(f"{url}-{day}.csv", sep=";")
         except FileNotFoundError:
             print(f"FileNotFound: {url}-{day}.csv")
+            continue
         except urllib.error.HTTPError:
             print(f"FileNotFound: {url}-{day}.csv")
+            continue
 
         # Concat df & daily
         # Reset index because concat extend indexes by default
