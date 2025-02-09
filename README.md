@@ -1,2 +1,3 @@
 # FrAirQuality
-School project on the study of French air quality overtime
+School project on the study of French air quality.
+
