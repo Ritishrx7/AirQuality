@@ -7,7 +7,7 @@ AirQuality is a project aimed at monitoring, analyzing, and visualizing air qual
 - Historical air quality data visualization
 - Support for multiple air quality metrics (PM2.5, PM10, CO2, NO2, etc.)
 - Data ingestion from sensors or external APIs
-- 
+
 
 ## Getting Started
 
