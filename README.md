@@ -40,30 +40,6 @@ AirQuality is a project aimed at monitoring, analyzing, and visualizing air qual
    python app.py
    ```
 
-5. **Access the dashboard**
-   - Open your browser and navigate to `http://localhost:8000` or the specified port.
-
-## Usage
-
-- View real-time air quality metrics on the dashboard.
-- Select historical date ranges to analyze trends.
-- Set alerts for specific pollutant thresholds.
-- Export data for use in other tools.
-
-## Project Structure
-
-```
-AirQuality/
-│
-├── backend/            # Backend source code
-├── frontend/           # Frontend source code (if applicable)
-├── data/               # Sample or collected data files
-├── scripts/            # Utility scripts
-├── requirements.txt    # Python dependencies
-├── README.md           # Project documentation
-└── .env.example        # Example environment variables
-```
-
 ## Contributing
 
 Contributions are welcome! Please follow these steps:
