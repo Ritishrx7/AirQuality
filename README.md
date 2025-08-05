@@ -56,7 +56,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Acknowledgements
 
-- [OpenAQ](https://openaq.org/) for open air quality datasets
 - [Plotly](https://plotly.com/) for data visualization tools
 - Community contributors
 
